@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pattern bench</title>
+    <link rel="stylesheet" href="/bench.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="crumb" aria-label="Breadcrumb">
+        <a id="home" href="#/">Pattern bench</a>
+        <span id="crumb-tail" hidden>
+          <span class="sep" aria-hidden="true">/</span>
+          <a id="crumb-tag" href="#/"></a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span id="crumb-name" aria-current="page"></span>
+        </span>
+      </nav>
+      <p id="lede"></p>
+      <nav id="tags"></nav>
+      <div id="pager" hidden>
+        <a id="prev-link"></a>
+        <a id="next-link"></a>
+        <button id="full" type="button">Full screen</button>
+      </div>
+    </header>
+    <div id="gallery"></div>
+    <div id="studio" hidden>
+      <main>
+        <svg id="stage" role="img"></svg>
+      </main>
+      <aside id="panel"></aside>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

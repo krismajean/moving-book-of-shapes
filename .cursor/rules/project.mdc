@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+
+# Pattern bench
+
+## Path
+`/Users/bbp/Documents/workspace/shape-bench`
+
+## Purpose
+Local pattern bench for sound-driven drawings. GitHub: `https://github.com/krismajean/moving-book-of-shapes`. Not part of the broompeltz.com site.
+
+## Stack
+Plain Node static server (`server.mjs`) and browser JavaScript. No dependencies. `npm start` binds `127.0.0.1:4731`.
+
+## Conventions
+- Drawings come from public ideas (titles, tags, short descriptions). Do not copy Book of Shapes source or node graphs.
+- Shared helpers live in `public/lib/geom.js`.
+- Hash routes: `#/` is the collection, `#/pattern-id` is the drawing and controls.
+- Joy Division, Joy Division Mesh, and Brockmann Beethoven Arcs are `study: true`.
+- Sound pushes linked sliders from the current value toward max, then eases back. Amount and Response are shared. Radiate sends that signal out from an origin on the drawings that opt in.
